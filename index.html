@@ -3,732 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - JobBoard</title>
+    <title>Login Register form</title>
+
+    <!--Boxicons CDN-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+    rel='stylesheet'>
+
+    <!--Custom CSS-->
     <link rel="stylesheet" href="style.css">
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script type="module" src="firebaseauth.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="JobBoard"><img src="logo (2).png" alt="logo" srcset=""></div>
-        <nav>
-          <a href="#Home" class="animated-link">Home</a>
-          <a href="#About" class="animated-link">About</a>
-          <a href="#How It Works" class="animated-link">How It Works</a>
-          <a href="#Why JobBoard" class="animated-link">Why JobBoard</a>
-          <a href="#Jobs" class="animated-link">Jobs</a>
-          <a href="#Careers" class="animated-link">Careers</a>
-          <a href="#Contact" class="animated-link">Contact</a>
-        </nav>
-        <!-- <div class="cart"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></div> -->
 
-        <div class="button-container">
-            <button class="btn1"><span>Job Post</span></button>
-            <button id="btn"><span>CV Post</span></button>
-        </div>
-        <div class="hamburger" onclick="toggleNav()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-      </header>
+    <div class="wrapper">
+        <span class="rotate-bg"></span>
+        <span class="rotate-bg2"></span>
 
-      <!-- section 1 -->
-<section class="section1" id="Home">
-    <div class="section1a">
-            <div class="container">The best job seekers &nbsp;|&nbsp; <span id="explore">Explore &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></span></div>
-            <h1>Find your <span> dream job with JobBoard</span></h1>
-            <p>Growing a business means having the right people in your team</p>          
-    <div class="search-container">
-            <i class="fas fa-search search-icon"></i> 
-            <input type="text" placeholder="Job title" id="inp">
-            <button type="button" id="search-button" class="s-btn"><span>Find Jobs &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span></button>
-  </div>
-        </div>
-        <div class="section1b">
-            <img src="img1.png" alt="">
-        </div>
-      </section>
+        <div class="form-box login">
+            <h2 class="title animation" style="--i:0; --j:21">Login</h2>
+            <form action="#">
+                <div id="signInMessage" class="messageDiv" style="display: none;"></div>
 
-    <!-- section2 -->
-    <section class="section2" id="About">
-        <div class="job-board"> 
-            <div class="container2">
-                <div class="header">
-                    <h6>ABOUT JOBBOARD</h6><br>
-                    <h1>One Step to Your <span>Future Starts Here</span></h1><br>
-                    <div class="section2a">
-                        <div>
-                            <p>Receive a customized salary approximation based on your profile.</p>
-                            <p class="p">Access reviews for more than 600,000 companies worldwide.</p><br>
-                        </div>
-                       <div><button id="learn-more"><span>Learn More</span></button><br></div> 
-                    </div>
+                <div class="input-box animation" style="--i:1; --j:22">
+                    <input type="text" id="email" required>
+                    <label for="">Email</label>
+                    <i class='bx bxs-user'></i>
                 </div>
-    
-                <div class="job-layout">
-                    <div class="job-layout-heading">
-                        <div><span>Jobs</span></div>
-                        <div>All Jobs</div>
-                    </div>
-                    <hr class="hr"><br>
-                    <div class="job-list" id="job-list"></div>
+                
+                <div class="input-box animation" style="--i:2; --j:23">
+                    <input type="password" id="password" required>
+                    <label for="">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
                 </div>
-            </div>
+                <button type="submit" class="btn animation" id="submitSignIn" style="--i:3; --j:24">Login</button>
+                <div class="linkTxt animation" style="--i:5; --j:25">
+                    <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                </div>
+                <div class="input-box animation" style="--i:4; --j:26">
+                    <button type="button" class="btn" id="guestLogin">Continue as Guest</button>
+                </div>
+                
+            </form>
         </div>
 
-        <script>
-            const jobsData = [
-                { title: "Graphic Designer", location: "Las Vegas", remote: "Remote", salary: "$65k" },
-                { title: "Brand Manager", location: "Los Angeles", remote: "Remote", salary: "$80k" },
-                { title: "Social Media Manager", location: "California", remote: "Remote", salary: "$45k" },
-                { title: "Marketing Coordinator", location: "London", remote: "Remote", salary: "$55k" },
-                { title: "Investment Banking Analyst", location: "Paris", remote: "Remote", salary: "$85k" },
-                { title: "Financial Analyst", location: "New York", remote: "Remote", salary: "$55k" },
-                { title: "Software Engineer", location: "San Francisco", remote: "Hybrid", salary: "$120k" },
-                { title: "Data Scientist", location: "Seattle", remote: "Remote", salary: "$110k" },
-                { title: "Product Manager", location: "Austin", remote: "On-Site", salary: "$95k" },
-                { title: "UX Designer", location: "Denver", remote: "Remote", salary: "$70k" },
-                { title: "Content Writer", location: "Boston", remote: "Remote", salary: "$50k" },
-                { title: "Quality Assurance Engineer", location: "Chicago", remote: "Hybrid", salary: "$75k" },
-                { title: "Human Resources Manager", location: "Atlanta", remote: "On-Site", salary: "$85k" },
-                { title: "IT Support Specialist", location: "Miami", remote: "Remote", salary: "$60k" },
-                { title: "DevOps Engineer", location: "Dallas", remote: "Remote", salary: "$115k" },
-                { title: "Business Analyst", location: "San Diego", remote: "Hybrid", salary: "$80k" },
-                { title: "Cybersecurity Specialist", location: "Phoenix", remote: "Remote", salary: "$105k" },
-                { title: "Operations Manager", location: "Houston", remote: "On-Site", salary: "$90k" },
-                { title: "SEO Specialist", location: "Portland", remote: "Remote", salary: "$55k" },
-                { title: "Front-End Developer", location: "Salt Lake City", remote: "Remote", salary: "$95k" },
-                { title: "Back-End Developer", location: "Raleigh", remote: "Remote", salary: "$100k" },
-                { title: "Full-Stack Developer", location: "Philadelphia", remote: "Hybrid", salary: "$110k" },
-                { title: "Digital Marketing Specialist", location: "Orlando", remote: "Remote", salary: "$65k" },
-                { title: "Sales Manager", location: "Charlotte", remote: "On-Site", salary: "$85k" },
-                { title: "Mobile App Developer", location: "Detroit", remote: "Remote", salary: "$100k" },
-                { title: "AI Engineer", location: "San Jose", remote: "Remote", salary: "$130k" },
-                { title: "Machine Learning Specialist", location: "Pittsburgh", remote: "Hybrid", salary: "$120k" },
-                { title: "Blockchain Developer", location: "Tampa", remote: "Remote", salary: "$125k" },
-                { title: "Cloud Architect", location: "Minneapolis", remote: "Remote", salary: "$135k" },
-                { title: "Database Administrator", location: "Kansas City", remote: "Remote", salary: "$90k" },
-                { title: "Network Administrator", location: "Cleveland", remote: "Remote", salary: "$85k" },
-                { title: "Technical Writer", location: "Indianapolis", remote: "Remote", salary: "$65k" },
-                { title: "E-Commerce Manager", location: "Nashville", remote: "On-Site", salary: "$75k" },
-                { title: "Web Developer", location: "Sacramento", remote: "Remote", salary: "$85k" },
-                { title: "Cloud Engineer", location: "Oklahoma City", remote: "Remote", salary: "$125k" },
-                { title: "Game Developer", location: "Las Vegas", remote: "Remote", salary: "$100k" },
-                { title: "Technical Support Engineer", location: "Albuquerque", remote: "Hybrid", salary: "$65k" },
-                { title: "Legal Advisor", location: "Fresno", remote: "On-Site", salary: "$95k" },
-                { title: "Administrative Assistant", location: "Honolulu", remote: "Remote", salary: "$45k" },
-                { title: "Project Manager", location: "Boise", remote: "Remote", salary: "$90k" },
-                { title: "AI Research Scientist", location: "Washington D.C.", remote: "Remote", salary: "$140k" },
-                { title: "Energy Consultant", location: "New Orleans", remote: "Remote", salary: "$85k" },
-                { title: "Industrial Designer", location: "Memphis", remote: "Hybrid", salary: "$75k" },
-                { title: "Healthcare Administrator", location: "Columbus", remote: "On-Site", salary: "$85k" },
-                { title: "Environmental Scientist", location: "Baltimore", remote: "Remote", salary: "$70k" },
-                { title: "Public Relations Specialist", location: "Birmingham", remote: "Remote", salary: "$60k" },
-                { title: "Research Analyst", location: "Richmond", remote: "Remote", salary: "$75k" },
-                { title: "Technical Account Manager", location: "Jackson", remote: "Remote", salary: "$95k" }
-            ];
-    
-            const jobList = document.getElementById('job-list');
-    
-            function renderJobs(jobs) {
-                const rows = jobs.reduce((acc, job, index) => {
-                    if (index % 2 === 0) acc.push([]);
-                    acc[acc.length - 1].push(job);
-                    return acc;
-                }, []);
-    
-                rows.forEach(row => {
-                    const rowDiv = document.createElement('div');
-                    rowDiv.classList.add('job-row');
-                    row.forEach(job => {
-                        const jobItem = document.createElement('div');
-                        jobItem.classList.add('job-item');
-                        jobItem.innerHTML = `
-                            <div class="job-content">
-                                <div class="job-title">${job.title}</div>
-                                <div class="location">
-                                    <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/6499704a3e6957bb58863309_globe-01.svg" loading="lazy" alt="icon" >${job.location}
-                                    <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/64997063d4816cfd4fcfaefd_home-smile.svg" loading="lazy" alt="icon">${job.remote}
-                                </div>
-                            </div>
-                            <div class="job-actions">
-                                <div class="salary">
-                                    <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/6499727f529708c661f671a7_bank-note-01.svg" loading="lazy" alt="icon">${job.salary}
-                                </div>
-                                <button id="search-button" class="j-btn"><span>Apply</span></button>
-                            </div>
-                        `;
-                        rowDiv.appendChild(jobItem);
-                    });
-                    jobList.appendChild(rowDiv);
-                });
-            } 
-
-            function scrollJobs() {
-            jobList.scrollTop += 1;
-            if (jobList.scrollTop >= jobList.scrollHeight / 2) {
-                jobList.scrollTop = 0; // Reset to start for a seamless loop
-            }
-        }
-
-        // Duplicate the job list content for seamless scrolling
-        function prepareInfiniteScroll() {
-            renderJobs(jobsData); // Render initial jobs
-            const clonedContent = jobList.innerHTML;
-            jobList.innerHTML += clonedContent; // Append the cloned content
-        }
-
-        prepareInfiniteScroll();
-        setInterval(scrollJobs, 15);
-        </script>
-    </section>
-
-    <!-- section 3 -->
-    <section class="section3" id="How It Works">
-        <div class="section3-container">
-            <div class="section3-header">
-                <h6>HOW IT WORKS</h6><br>
-                <h1>Getting hired has <span>never been easier</span></h1><br>
-                <p>The ultimate job search platform designed to connect talented </p>
-                <p class="p1">individuals like you with rewarding career opportunities.</p><br><br><hr>
-            </div>
-            <div class="section3-container2">
-                <div class="c1">
-                    <div class="c1-image"><br><br>
-                        <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/649c05b190e23f492599be0a_Icon%20(Stroke).svg" alt=""><br><br>
-                    </div><br>
-                    <h1>Create Video</h1><br>
-                    <p>Record your introduction video to showcase what you bring to the table.</p><br><br>
-                </div>
-                <div class="c1">
-                    <div class="c1-image">
-                        <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/649c05b973a2a508a2e93b4b_Icon%20(Stroke)%20(1).svg" alt=""><br><br>
-                    </div><br>
-                    <h1>Share Profile</h1><br>
-                    <p>Upload  resume & share your profile with recruiters when applying to jobs.</p><br><br>
-                </div>
-                <div class="c1">
-                    <div class="c1-image">
-                        <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/649c05c55b6b6eedce813640_Icon%20(Stroke)%20(2).svg" alt=""><br><br>
-                    </div><br>
-                    <h1>Get Hired</h1><br>
-                    <p>Get hired faster by standing out to recruiters and hiring managers.</p><br><br>
-                </div>
-            </div>
+        <div class="info-text login">
+            <h2 class="animation" style="--i:0; --j:20">Welcome Back!</h2>
+            <p class="animation" style="--i:1; --j:21">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti,rem?</p>
         </div>
-    </section>
 
-    <!-- section 4 -->
-     <section class="section4" id="Why JobBoard">
-        <div class="section4-container">
-            <div class="section4-header">
-                <h6>WHY JOBBOARD</h6><br>
-                <h1>New way to get a job</h1><br>
-                <p>Upon gaining entry to the JobBoard platform, your initial task</p>
-                <p class="p1">involves inputting your initial team positions or roles.</p><br>
-            </div>
-            <div class="section4-container2">
-                <div class="c">
-                    <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/64999d6f0bf30d9944589356_users-02.svg" alt=""><br><br>
-                    <h1>Future of Job Hunting</h1><br>
-                    <p>Say goodbye to the traditional job search process and the step into the future of employment opportunities.</p><br><br>
-                    <span>Learn More &nbsp;<i class="fas fa-arrow-right"></i></span><br>
+        <div class="form-box register">
+
+            <h2 class="title animation" style="--i:17; --j:0">Sign Up</h2>
+
+            <form action="#">
+                <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+
+                <div class="input-box animation" style="--i:18; --j:1">
+                    <input type="text" id="fName" required>
+                    <label for="">First Name</label>
+                    <i class='bx bxs-user'></i>
                 </div>
-                <div class="c">
-                    <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/64999e78ececddbc5712e0b3_code-square-02.svg" alt=""><br><br>
-                    <h1>Simplify Research</h1><br>
-                    <p>Save time and effort by accessing a wide range of opportunities in various industries and career stages.</p><br><br>
-                    <span>Learn More &nbsp;<i class="fas fa-arrow-right"></i></span><br>
+
+                <div class="input-box animation" style="--i:18; --j:1">
+                    <input type="text" id="lName" required>
+                    <label for="">Last Name</label>
+                    <i class='bx bxs-user'></i>
                 </div>
-                <div class="c">
-                    <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/64999e7e7a61199c44e5c577_face-smile.svg" alt=""><br><br>
-                    <h1>Be unique</h1><br>
-                    <p>Craft a detailed profile that effectively showcases your unique skills, past experiences, and notable accomplishment.</p><br><br>
-                    <span>Learn More &nbsp;<i class="fas fa-arrow-right"></i></span><br>
+
+                <div class="input-box animation" style="--i:19; --j:2">
+                    <input type="email" id="rEmail" required>
+                    <label for="">Email</label>
+                    <i class='bx bxs-envelope'></i>
                 </div>
-            </div>
-        </div>
-     </section>
 
-     <!-- section 5 -->
-
-     <section class="section5" id="Jobs">
-        <div class="section5-container">
-            <h6>JOB VACANCY</h6><br>
-            <h1>Discover the best job</h1><br>
-            <p>Start career with the best company in the world, we ensures </p>
-            <p class="p1">you to get the best job possible.</p><br>
-        </div>
-            <center><div class="pl-btn">
-            <button id="popularBtn">Popular</button>
-            <button id="latestBtn">Latest</button>
-            </div></center>
-        <div class="card-back">
-            <div id="job-cards-container"></div>
-        </div>
-    <script>
-        const popularJobs = [
-            
-            {
-                "title": "Data Engineer",
-                "company": "DataDriven",
-                "description": "Design and maintain scalable data processing systems.",
-                "location": "Boston",
-                "remote": "Hybrid",
-                "salary": "$130k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
-                "category": "Engineering"
-            },
-            {
-                "title": "Finance Analyst",
-                "company": "FinTech Innovations",
-                "description": "Analyze financial data to support strategic business decisions.",
-                "location": "Atlanta",
-                "remote": "On-site",
-                "salary": "$95k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
-                "category": "Finance"
-            },
-            {
-                "title": "Marketing Manager",
-                "company": "BrandBoost",
-                "description": "Lead marketing initiatives and manage cross-channel campaigns.",
-                "location": "Dallas",
-                "remote": "Remote",
-                "salary": "$100k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
-                "category": "Marketing"
-            },
-            {
-                "title": "HR Manager",
-                "company": "TeamBuilder",
-                "description": "Oversee recruitment and employee relations to foster a positive workplace culture.",
-                "location": "Miami",
-                "remote": "Hybrid",
-                "salary": "$80k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
-                "category": "Management"
-            },
-            {
-                "title": "Operations Manager",
-                "company": "Pipe",
-                "description": "Optimize operational workflows for maximum efficiency.",
-                "location": "San Francisco",
-                "remote": "Hybrid",
-                "salary": "$120k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
-                "category": "Management"
-            },
-            {
-                "title": "SEO Analyst",
-                "company": "Searchly",
-                "description": "Optimize website content to improve search engine rankings and traffic.",
-                "location": "New York",
-                "remote": "Hybrid",
-                "salary": "$70k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg"
-            }
-        ];
-
-        const latestJobs = [
-            {
-                "title": "Social Media Manager",
-                "company": "InstaWave",
-                "description": "Create and manage social media strategies to engage online communities.",
-                "location": "Chicago",
-                "remote": "On-site",
-                "salary": "$90k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg"
-            },
-                    {
-                "title": "PPC Campaign Specialist",
-                "company": "AdReach",
-                "description": "Manage pay-per-click advertising campaigns to maximize ROI.",
-                "location": "San Francisco",
-                "remote": "Remote",
-                "salary": "$95k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
-                "category": "Digital"
-            },
-            {
-                "title": "UX Designer",
-                "company": "PixelCraft",
-                "description": "Design user-friendly interfaces and improve the user experience.",
-                "location": "Austin",
-                "remote": "Hybrid",
-                "salary": "$110k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
-                "category": "Design"
-            },
-            {
-                "title": "Front-End Developer",
-                "company": "CodeWorks",
-                "description": "Develop visually appealing and interactive web interfaces.",
-                "location": "Seattle",
-                "remote": "Remote",
-                "salary": "$105k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
-                "category": "Development"
-            },
-            {
-                "title": "Back-End Developer",
-                "company": "API Genius",
-                "description": "Build and maintain server-side application logic and databases.",
-                "location": "Denver",
-                "remote": "Remote",
-                "salary": "$115k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
-                "category": "Development"
-            },
-            {
-                "title": "PPC Campaign Specialist",
-                "company": "AdReach",
-                "description": "Manage pay-per-click advertising campaigns to maximize ROI.",
-                "location": "San Francisco",
-                "remote": "Remote",
-                "salary": "$95k",
-                "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg"
-            }
-        ];
-
-        function createJobCard(job) {
-            const mainContainer = document.createElement("div");
-            mainContainer.className = "main-container";
-
-            mainContainer.innerHTML = `
-                <div class="card-container">
-                    <div class="img-container">
-                        <img alt="company logo" src="${job.logo}">
-                    </div>
-                    <div class="card-heading">
-                        <div>
-                            <h3>${job.title}</h3><br>
-                            <h4>${job.company}</h4>
-                        </div>
-                        <button id="search-button" class="j-btn"><span>Apply</span></button>
-                    </div>
+                <div class="input-box animation" style="--i:20; --j:3">
+                    <input type="password" id="rPassword" required>
+                    <label for="">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
                 </div>
-                <div class="p-tag"><br><br>
-                    <p>${job.description}</p>
+
+                <button type="submit" class="btn animation" id="submitSignUp" style="--i:21;--j:4">Sign Up</button>
+
+                <div class="linkTxt animation" style="--i:22; --j:5">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
                 </div>
-                <hr id="hr">
-                <div class="icons">
-                     <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/6499704a3e6957bb58863309_globe-01.svg" alt="location icon"> ${job.location}&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/64997063d4816cfd4fcfaefd_home-smile.svg" alt="remote icon"> ${job.remote}&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/6499727f529708c661f671a7_bank-note-01.svg" alt="salary icon"> ${job.salary}
-                </div>
-            `;
-            mainContainer.querySelector(".j-btn").addEventListener("click", () => {
-        console.log("Apply button clicked! Redirecting...");
-        window.location.href = "./JobApplicationForm.html";
-    });
-            return mainContainer;
-        }
 
-        function displayJobs(jobs) {
-            const container = document.getElementById("job-cards-container");
-            container.innerHTML = "";
-            jobs.forEach(job => {
-                const card = createJobCard(job);
-                container.appendChild(card);
-            });
-        }
-
-        document.getElementById("popularBtn").addEventListener("click", () => displayJobs(popularJobs));
-        document.getElementById("latestBtn").addEventListener("click", () => displayJobs(latestJobs));
-
-        // Default to showing popular jobs
-        displayJobs(popularJobs);
-    </script>
-    <center><button id="search-button" class="view-more"><span>View All Jobs</span></button></center>
-     </section>     
-     
-<!-- section 6 -->
-<section class="section6">
-    <div class="section6-container">
-        <div class="header">
-            <h6>HOW IT WORKS</h6><br>
-            <h1>Getting started is easy</h1><br>
-            <div class="section6a">
-                <div>
-                    <p>Upon gaining entry to the JobBoard platform, your initial</p>
-                    <p class="p">task involves inputting your initial team positions or roles.</p><br>
-                </div>
-               <div><button id="learn-more"><span>Learn More</span></button><br></div> 
-            </div>
+            </form>
         </div>
-    </div>
-<div class="section6b-container">
-    <div class="section6b">
-        <h6 class="num">01</h6><br>
-        <h4 class="tabs-title">Job search</h4><br>
-        <p class="para">Begin your job search by exploring a wide range of job openings.</p>
-    </div>
-    <div class="section6b">
-        <h6 class="num">02</h6><br>
-        <h4 class="tabs-title">Salary estimate</h4><br>
-        <p class="para">Provide your profile details to receive a salary estimate.</p>
-    </div>
-    <div class="section6b">
-        <h6 class="num">03</h6><br>
-        <h4 class="tabs-title">Read reviews</h4><br>
-        <p class="para">Gain valuable insights about potential employers.</p>
-    </div>
-    <div class="section6b">
-        <h6 class="num">04</h6><br>
-        <h4 class="tabs-title">Apply and connect</h4><br>
-        <p class="para">Connect with employers, attend interviews.</p>
-    </div>
-</div>
-<div class="tabs-content">
-    <img loading="lazy" src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/649a9bdeb40d1a87a5793a8f_form%20image.svg" alt="image form" class="form-image">
-    <div class="right-tabs-content1">
-        <h6 class="primary-title1">01</h6>
-        <h3 class="tabs-title1">Discover Job Openings</h3>
-        <p class="short-paragraph1">Start by searching for job openings using our comprehensive search engine. Simply enter relevant keywords, location, and other criteria to find the positions that match your interests and qualifications.</p>
-    </div>
-</div>
-<div class="tabs-content">
-    <img loading="lazy" src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/649a9bdeb40d1a87a5793a8f_form%20image.svg" alt="image form" class="form-image">
-    <div class="right-tabs-content1">
-        <h6 class="primary-title1">02</h6>
-        <h3 class="tabs-title1">Customized Salary Assessment</h3>
-        <p class="short-paragraph1">After finding a job that interests you, provide your profile details to receive a personalized salary estimate.</p>
-    </div>
-</div>
-<div class="tabs-content">
-    <img loading="lazy" src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/649a9bdeb40d1a87a5793a8f_form%20image.svg" alt="image form" class="form-image">
-    <div class="right-tabs-content1">
-        <h6 class="primary-title1">03</h6>
-        <h3 class="tabs-title1">Gain Insights from Company Reviews</h3>
-        <p class="short-paragraph1">Read feedback and ratings from current and former employees, helping you make informed decisions about companies you are considering.</p>
-    </div>
-</div>
-<div class="tabs-content">
-    <img loading="lazy" src="https://cdn.prod.website-files.com/64943f2936915879aa1dae17/649a9bdeb40d1a87a5793a8f_form%20image.svg" alt="image form" class="form-image">
-    <div class="right-tabs-content1">
-        <h6 class="primary-title1">04</h6>
-        <h3 class="tabs-title1">Act and make connections</h3>
-        <p class="short-paragraph1">Access valuable insights from a wealth of company reviews. Gain a deeper understanding of potential employers.</p>
-    </div>
-</div>
-<script>
-    const view = document.querySelectorAll(".view-more");
-    view[0].addEventListener('click',()=>{
-        window.location.href="./jobs.html"
-    })
-// Select all section6b elements and all tabs-content elements
-const section6bElements = document.querySelectorAll('.section6b');
-const tabsContentElements = document.querySelectorAll('.tabs-content');
 
-// Function to initialize the default selection
-function initializeDefault() {
-    // Apply the gradient to the first section6b
-    section6bElements[0].style.borderImage = 'linear-gradient(to right, #6857f6, #a549e2) 1';
-
-    // Display the first tabs-content
-    tabsContentElements[0].style.display = 'flex';
-
-    // Hide the rest of the tabs-content
-    for (let i = 1; i < tabsContentElements.length; i++) {
-        tabsContentElements[i].style.display = 'none';
-    }
-}
-
-// Add event listeners for click events on each section6b element
-section6bElements.forEach((element, index) => {
-    element.addEventListener('click', () => {
-        // Remove gradient from all section6b elements
-        section6bElements.forEach((el) => el.style.borderImage = '');
-
-        // Hide all tabs-content
-        tabsContentElements.forEach((content) => content.style.display = 'none');
-
-        // Apply gradient to the clicked element
-        element.style.borderImage = 'linear-gradient(to right, #6857f6, #a549e2) 1';
-
-        // Show the corresponding tabs-content
-        tabsContentElements[index].style.display = 'flex';
-    });
-});
-
-// Initialize the default selection when the page loads
-initializeDefault();
-
-</script>
-</section>
-
-<!-- section7 -->
- <section>
-
- </section>
-
-<!-- section8 -->
-<section class="section8">
-    <div class="section8a">
-        <h2>Job-Search Smarter?
-            <br><span>We make it easy</span>
-        </h2><br><br><br>
-        <center><button id="search-button" class="s-btn"><span>Get Started For Free</span></button></center>
-    </div>
-</section>
-
-<!-- section9 -->
-<section class="section9" id="Careers">
-    <div class="section9-container">
-        <div class="section9a">
-            <h6>CAREERS</h6><br>
-            <h3>Join to help businesses grow</h3><br><br><br><br>
-            <button id="search-button"><span>Explore Careers &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span></button>
+        <div class="info-text register">
+            <h2 class="animation" style="--i:17; --j:0;">Welcome Back!</h2>
+            <p class="animation" style="--i:18; --j:1;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti,rem?</p>
         </div>
-        <div class="section9a">
-            <h6>BLOG</h6><br>
-            <h3>Tips, and trends for future job</h3><br><br><br><br>
-            <button id="search-button"><span>Explore Blog &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span></button>
-        </div>
+
     </div>
-</section>
 
-<!-- section10 -->
-<section class="section10" id="Contact">
-    <div class="section10a">
-        <h4>Subscribe</h4><br>
-        <p>Stay current with all thinks JobBoard</p><br>
-        <div class="search-container1">
-            <input type="text" placeholder="Email" id="inp">
-            <button type="submit" id="Subscribe"><span>Subscribe &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span></button>
-        </div>
-    </div>
-    <div class="section10b">
-        <div class="sec10">
-            <h6>COMPANY</h6>
-            <a href="#">about</a>
-            <a href="#">Our Team</a>
-            <a href="#">Jobs</a>
-        </div>
-        <div class="sec10">
-            <h6>RESOURCES</h6>
-            <a href="#">News</a>
-            <a href="#">FAQs</a>
-            <a href="#">Candidates</a>
-        </div>
-        <div class="sec10">
-            <h6>CONTACTS</h6>
-            <a href="#">CV Post</a>
-            <a href="#">Job Post</a>
-            <a href="#">Contact Us</a>
-        </div>
-    </div>
- </section>
-
- <!-- footer -->
-  <footer>
-        <div class="footer-container2">
-            <div class="row">
-                <div>
-                    <a href="#"><i class="fas fa-copyright text-light me-2"></i><span>JobBoard</span></a>, All rights reserved.
-                </div>
-                <div class="footerlink">
-                 Designed By <a class="border-bottom" href="https://htmlcodex.com"> <span> Jaideep Sai </span></a>
-                </div>
-            </div>
-        </div>
-  </footer>
-
-      <!-- Custom Modal for Subscription Message -->
-<div id="subscription-message-modal" class="modal">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h4>Thank You!</h4>
-        <p>You have successfully subscribed to JobBoard. Stay tuned for updates!</p>
-    </div>
-</div>
-
-  <script>
-
-    function toggleNav() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
-}
-// Get the modal and button elements
-const subscriptionModal = document.getElementById("subscription-message-modal");
-const subscribeButton = document.getElementById("Subscribe");
-const closeModalButton = document.querySelector(".close-modal");
-const emailInput = document.querySelector(".search-container1 input[type='text']");
-
-// Function to open the modal
-function openModal() {
-    subscriptionModal.style.display = "block";
-}
-
-// Function to close the modal
-function closeModal() {
-    subscriptionModal.style.display = "none";
-}
-
-// Event listener for the subscribe button
-subscribeButton.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent default form submission
-
-    const email = emailInput.value.trim();
-
-    if (email) {
-        // Simulate subscription (replace with actual API call)
-        console.log("Subscribed with email:", email);
-        openModal(); // Show the success modal
-        emailInput.value = ""; // Clear the input field
-    } else {
-        alert("Please enter a valid email address."); // Show an error if the input is empty
-    }
-});
-
-// Event listener for the close button
-closeModalButton.addEventListener("click", closeModal);
-
-// Close the modal if the user clicks outside of it
-window.addEventListener("click", (e) => {
-    if (e.target === subscriptionModal) {
-        closeModal();
-    }
-});
-
-        document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".j-btn,#btn").forEach(button => {
-        button.addEventListener("click", () => {
-            window.location.href = "./JobApplicationForm.html";
-        });
-    });
-});
-
-    document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".s-btn,.btn1,#explore,#learn-more").forEach(button => {
-        button.addEventListener("click", () => {
-            window.location.href = "./jobs.html";
-        });
-    });
-});
-
-
-
-
-</script>
-
+    <!--Script.js-->
+    <script src="script.js"></script>
 </body>
-</html>
+
+</html> 
