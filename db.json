@@ -1,0 +1,822 @@
+[
+    {
+        "title": "Digital Marketing Specialist",
+        "company": "BrightMedia",
+        "description": "Develop and implement digital marketing campaigns to drive brand awareness.",
+        "location": "Los Angeles",
+        "remote": "Remote",
+        "salary": "$85k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Digital"
+    },
+    {
+        "title": "SEO Analyst",
+        "company": "Searchly",
+        "description": "Optimize website content to improve search engine rankings and traffic.",
+        "location": "New York",
+        "remote": "Hybrid",
+        "salary": "$70k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Digital"
+    },
+    {
+        "title": "Social Media Manager",
+        "company": "InstaWave",
+        "description": "Create and manage social media strategies to engage online communities.",
+        "location": "Chicago",
+        "remote": "On-site",
+        "salary": "$90k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Digital"
+    },
+    {
+        "title": "PPC Campaign Specialist",
+        "company": "AdReach",
+        "description": "Manage pay-per-click advertising campaigns to maximize ROI.",
+        "location": "San Francisco",
+        "remote": "Remote",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Digital"
+    },
+    {
+        "title": "UX Designer",
+        "company": "PixelCraft",
+        "description": "Design user-friendly interfaces and improve the user experience.",
+        "location": "Austin",
+        "remote": "Hybrid",
+        "salary": "$110k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Design"
+    },
+    {
+        "title": "Front-End Developer",
+        "company": "CodeWorks",
+        "description": "Develop visually appealing and interactive web interfaces.",
+        "location": "Seattle",
+        "remote": "Remote",
+        "salary": "$105k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Back-End Developer",
+        "company": "API Genius",
+        "description": "Build and maintain server-side application logic and databases.",
+        "location": "Denver",
+        "remote": "Remote",
+        "salary": "$115k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Data Engineer",
+        "company": "DataDriven",
+        "description": "Design and maintain scalable data processing systems.",
+        "location": "Boston",
+        "remote": "Hybrid",
+        "salary": "$130k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Finance Analyst",
+        "company": "FinTech Innovations",
+        "description": "Analyze financial data to support strategic business decisions.",
+        "location": "Atlanta",
+        "remote": "On-site",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Finance"
+    },
+    {
+        "title": "Marketing Manager",
+        "company": "BrandBoost",
+        "description": "Lead marketing initiatives and manage cross-channel campaigns.",
+        "location": "Dallas",
+        "remote": "Remote",
+        "salary": "$100k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "HR Manager",
+        "company": "TeamBuilder",
+        "description": "Oversee recruitment and employee relations to foster a positive workplace culture.",
+        "location": "Miami",
+        "remote": "Hybrid",
+        "salary": "$80k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Management"
+    },
+    {
+        "title": "Operations Manager",
+        "company": "Pipe",
+        "description": "Optimize operational workflows for maximum efficiency.",
+        "location": "San Francisco",
+        "remote": "Hybrid",
+        "salary": "$120k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Management"
+    },
+    {
+        "title": "Business Analyst",
+        "company": "VisionEdge",
+        "description": "Analyze business processes and recommend data-driven improvements.",
+        "location": "San Diego",
+        "remote": "Remote",
+        "salary": "$88k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Finance"
+    },
+    {
+        "title": "Creative Director",
+        "company": "Artistry Studios",
+        "description": "Lead creative projects and ensure brand consistency across campaigns.",
+        "location": "New York",
+        "remote": "Hybrid",
+        "salary": "$140k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Design"
+    },
+    {
+        "title": "Software Engineer",
+        "company": "CodeHive",
+        "description": "Design and develop scalable software applications.",
+        "location": "Austin",
+        "remote": "On-site",
+        "salary": "$120k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Data Scientist",
+        "company": "AI Dynamics",
+        "description": "Leverage machine learning techniques to analyze data and generate insights.",
+        "location": "San Francisco",
+        "remote": "Remote",
+        "salary": "$125k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Financial Consultant",
+        "company": "WealthPro",
+        "description": "Advise clients on financial strategies and investment opportunities.",
+        "location": "Chicago",
+        "remote": "Hybrid",
+        "salary": "$110k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Finance"
+    },
+    {
+        "title": "Content Strategist",
+        "company": "NarrativePro",
+        "description": "Plan and execute content strategies to align with brand goals.",
+        "location": "Seattle",
+        "remote": "Remote",
+        "salary": "$75k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Digital"
+    },
+    {
+        "title": "UI Designer",
+        "company": "VisualFlow",
+        "description": "Create intuitive user interfaces and maintain brand design standards.",
+        "location": "Portland",
+        "remote": "On-site",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Design"
+    },
+    {
+        "title": "DevOps Engineer",
+        "company": "CloudScale",
+        "description": "Automate and improve development and deployment processes.",
+        "location": "Denver",
+        "remote": "Hybrid",
+        "salary": "$130k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Sales Manager",
+        "company": "PeakSales",
+        "description": "Lead and motivate the sales team to achieve revenue targets.",
+        "location": "Phoenix",
+        "remote": "On-site",
+        "salary": "$110k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Graphic Designer",
+        "company": "CreativePulse",
+        "description": "Design visual assets for marketing and branding campaigns.",
+        "location": "Orlando",
+        "remote": "Remote",
+        "salary": "$80k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Design"
+    },
+    {
+        "title": "Product Manager",
+        "company": "InnovateCore",
+        "description": "Oversee product lifecycle and collaborate with teams to meet customer needs.",
+        "location": "Boston",
+        "remote": "Hybrid",
+        "salary": "$130k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Management"
+    },
+    {
+        "title": "Cybersecurity Analyst",
+        "company": "SecureNet",
+        "description": "Monitor and secure IT systems to prevent unauthorized access.",
+        "location": "Washington D.C.",
+        "remote": "Remote",
+        "salary": "$115k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Financial Planner",
+        "company": "PlanWise",
+        "description": "Develop financial plans to help clients achieve their goals.",
+        "location": "Las Vegas",
+        "remote": "On-site",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Finance"
+    },
+    {
+        "title": "AI Research Scientist",
+        "company": "MindMeld",
+        "description": "Conduct research and develop algorithms for artificial intelligence systems.",
+        "location": "San Jose",
+        "remote": "Remote",
+        "salary": "$145k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Event Coordinator",
+        "company": "Eventify",
+        "description": "Plan and execute memorable events for clients and organizations.",
+        "location": "Nashville",
+        "remote": "Hybrid",
+        "salary": "$65k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Mobile App Developer",
+        "company": "AppWorks",
+        "description": "Create high-performing mobile applications for Android and iOS platforms.",
+        "location": "Miami",
+        "remote": "Remote",
+        "salary": "$110k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Technical Writer",
+        "company": "DocuTech",
+        "description": "Create clear and concise technical documentation for products and systems.",
+        "location": "Atlanta",
+        "remote": "Hybrid",
+        "salary": "$85k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Digital"
+    },
+    {
+        "title": "Creative Strategist",
+        "company": "ThinkOutside",
+        "description": "Develop innovative marketing strategies to enhance brand impact.",
+        "location": "New York",
+        "remote": "Remote",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "AI Product Manager",
+        "company": "DeepThoughts",
+        "description": "Manage AI-driven products and collaborate with cross-functional teams.",
+        "location": "Seattle",
+        "remote": "On-site",
+        "salary": "$135k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Management"
+    },
+    {
+        "title": "DevOps Consultant",
+        "company": "CloudSync",
+        "description": "Provide expert advice to optimize DevOps workflows and infrastructure.",
+        "location": "Denver",
+        "remote": "Remote",
+        "salary": "$140k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Engineering"
+    },{
+        "title": "Content Marketing Manager",
+        "company": "ContentFlow",
+        "description": "Develop and oversee content strategies to boost brand engagement.",
+        "location": "Phoenix",
+        "remote": "Hybrid",
+        "salary": "$90k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Software Engineer",
+        "company": "CodeCraft",
+        "description": "Design and implement scalable software solutions for clients.",
+        "location": "Austin",
+        "remote": "Remote",
+        "salary": "$115k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Data Analyst",
+        "company": "InsightAnalytics",
+        "description": "Analyze and interpret complex datasets to inform business decisions.",
+        "location": "San Diego",
+        "remote": "Hybrid",
+        "salary": "$90k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Finance"
+    },
+    {
+        "title": "HR Specialist",
+        "company": "PeopleFirst",
+        "description": "Manage recruitment and support employee well-being initiatives.",
+        "location": "Orlando",
+        "remote": "On-site",
+        "salary": "$70k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Management"
+    },
+    {
+        "title": "Web Developer",
+        "company": "WebWave",
+        "description": "Build and maintain websites with responsive design features.",
+        "location": "Salt Lake City",
+        "remote": "Remote",
+        "salary": "$105k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Development"
+    },
+    {
+        "title": "Sales Manager",
+        "company": "GrowthEdge",
+        "description": "Drive sales strategies and manage a team to achieve targets.",
+        "location": "Kansas City",
+        "remote": "Hybrid",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Machine Learning Engineer",
+        "company": "AI Works",
+        "description": "Develop and deploy machine learning algorithms for various applications.",
+        "location": "Chicago",
+        "remote": "Remote",
+        "salary": "$130k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Graphic Designer",
+        "company": "DesignHive",
+        "description": "Create compelling visuals for digital and print marketing campaigns.",
+        "location": "Portland",
+        "remote": "Hybrid",
+        "salary": "$80k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Design"
+    },
+    {
+        "title": "Network Engineer",
+        "company": "NetSecure",
+        "description": "Design and manage secure network systems for enterprises.",
+        "location": "San Jose",
+        "remote": "On-site",
+        "salary": "$120k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Digital Strategist",
+        "company": "BrightMedia",
+        "description": "Plan and execute comprehensive digital strategies for client success.",
+        "location": "Los Angeles",
+        "remote": "Remote",
+        "salary": "$110k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Digital"
+    },
+    {
+        "title": "Product Manager",
+        "company": "InnoTech",
+        "description": "Lead cross-functional teams to deliver innovative products on time.",
+        "location": "New York",
+        "remote": "Hybrid",
+        "salary": "$125k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Management"
+    },
+    {
+        "title": "Cloud Engineer",
+        "company": "SkyNet Solutions",
+        "description": "Design and manage scalable cloud infrastructures.",
+        "location": "Seattle",
+        "remote": "Remote",
+        "salary": "$135k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Content Creator",
+        "company": "ContentFlow",
+        "description": "Develop engaging multimedia content to support marketing campaigns.",
+        "location": "Miami",
+        "remote": "On-site",
+        "salary": "$75k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Digital"
+    },
+    {
+        "title": "UI Designer",
+        "company": "PixelCraft",
+        "description": "Create visually appealing and intuitive user interfaces.",
+        "location": "Austin",
+        "remote": "Remote",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Design"
+    },
+    {
+        "title": "Mobile App Developer",
+        "company": "AppHive",
+        "description": "Build and optimize mobile applications for Android and iOS platforms.",
+        "location": "San Francisco",
+        "remote": "Hybrid",
+        "salary": "$120k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Data Analyst",
+        "company": "InsightsNow",
+        "description": "Analyze business data to uncover actionable insights.",
+        "location": "Chicago",
+        "remote": "Remote",
+        "salary": "$90k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Finance"
+    },
+    {
+        "title": "DevOps Engineer",
+        "company": "FlowOps",
+        "description": "Implement and manage CI/CD pipelines for development teams.",
+        "location": "Boston",
+        "remote": "Hybrid",
+        "salary": "$140k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Brand Strategist",
+        "company": "BrandBoost",
+        "description": "Develop and execute branding strategies for clients.",
+        "location": "Dallas",
+        "remote": "On-site",
+        "salary": "$100k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Quality Assurance Engineer",
+        "company": "Testify",
+        "description": "Ensure product quality by creating and executing test plans.",
+        "location": "Denver",
+        "remote": "Remote",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Customer Success Manager",
+        "company": "HappyClients",
+        "description": "Foster strong client relationships and ensure customer satisfaction.",
+        "location": "Atlanta",
+        "remote": "Remote",
+        "salary": "$85k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "HR Director",
+        "company": "PeopleFirst",
+        "description": "Lead human resources strategies and manage organizational development.",
+        "location": "Miami",
+        "remote": "Hybrid",
+        "salary": "$150k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Management"
+    },
+    {
+        "title": "Marketing Analyst",
+        "company": "BrandLab",
+        "description": "Analyze marketing data to improve and refine strategies.",
+        "location": "Los Angeles",
+        "remote": "Remote",
+        "salary": "$80k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Product Designer",
+        "company": "DesignWorks",
+        "description": "Design user-centric products that are intuitive and innovative.",
+        "location": "San Francisco",
+        "remote": "Remote",
+        "salary": "$120k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Design"
+    },
+    {
+        "title": "Mobile Developer",
+        "company": "AppWorks",
+        "description": "Develop and maintain mobile applications for iOS and Android.",
+        "location": "Seattle",
+        "remote": "Hybrid",
+        "salary": "$115k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Product Owner",
+        "company": "TechPulse",
+        "description": "Manage product development and lifecycle to ensure successful outcomes.",
+        "location": "New York",
+        "remote": "Hybrid",
+        "salary": "$130k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Management"
+    },
+    {
+        "title": "Sales Engineer",
+        "company": "TechGear",
+        "description": "Provide technical support and expertise during the sales process.",
+        "location": "Chicago",
+        "remote": "On-site",
+        "salary": "$100k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Account Executive",
+        "company": "Salesify",
+        "description": "Drive revenue growth by closing deals and managing client relationships.",
+        "location": "Dallas",
+        "remote": "Remote",
+        "salary": "$90k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Data Scientist",
+        "company": "DataMind",
+        "description": "Build machine learning models and analyze complex data sets.",
+        "location": "San Francisco",
+        "remote": "Hybrid",
+        "salary": "$140k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Business Analyst",
+        "company": "InsightAnalytics",
+        "description": "Evaluate business data to provide actionable recommendations.",
+        "location": "Boston",
+        "remote": "On-site",
+        "salary": "$85k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Finance"
+    },
+    {
+        "title": "Content Strategist",
+        "company": "ContentForge",
+        "description": "Plan, execute, and oversee content strategies for various digital platforms.",
+        "location": "Los Angeles",
+        "remote": "Remote",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Digital"
+    },
+    {
+        "title": "Cloud Architect",
+        "company": "CloudTech",
+        "description": "Design and manage cloud computing systems and infrastructure.",
+        "location": "Austin",
+        "remote": "Hybrid",
+        "salary": "$145k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Junior UX/UI Designer",
+        "company": "CreativeWorks",
+        "description": "Assist in designing and improving user interfaces for web and mobile apps.",
+        "location": "Seattle",
+        "remote": "Remote",
+        "salary": "$75k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Design"
+    },
+    {
+        "title": "Brand Strategist",
+        "company": "StrategizeNow",
+        "description": "Develop and implement brand strategies to enhance company image.",
+        "location": "Chicago",
+        "remote": "Remote",
+        "salary": "$100k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Full Stack Developer",
+        "company": "DevWorks",
+        "description": "Build and maintain both front-end and back-end systems for web applications.",
+        "location": "Denver",
+        "remote": "Hybrid",
+        "salary": "$120k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Development"
+    },
+    {
+        "title": "DevOps Engineer",
+        "company": "CloudX",
+        "description": "Automate and streamline development operations to improve system reliability.",
+        "location": "Boston",
+        "remote": "On-site",
+        "salary": "$125k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Product Marketing Manager",
+        "company": "MarketGenius",
+        "description": "Develop product marketing strategies to maximize product success.",
+        "location": "San Francisco",
+        "remote": "Remote",
+        "salary": "$110k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Network Engineer",
+        "company": "NetWorkz",
+        "description": "Design, implement, and maintain network infrastructure for organizations.",
+        "location": "Dallas",
+        "remote": "Hybrid",
+        "salary": "$115k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Content Writer",
+        "company": "WriteUp",
+        "description": "Write and edit content for blogs, websites, and marketing campaigns.",
+        "location": "Miami",
+        "remote": "Remote",
+        "salary": "$65k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Digital"
+    },
+    {
+        "title": "Digital Designer",
+        "company": "DesignWorks",
+        "description": "Create digital art and design for websites, ads, and branding materials.",
+        "location": "Austin",
+        "remote": "Remote",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Design"
+    },
+    {
+        "title": "IT Specialist",
+        "company": "TechPros",
+        "description": "Provide IT support and manage technology systems for the company.",
+        "location": "Chicago",
+        "remote": "Hybrid",
+        "salary": "$85k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "Creative Director",
+        "company": "Visionary Studios",
+        "description": "Lead the creative team to develop innovative marketing materials.",
+        "location": "New York",
+        "remote": "Hybrid",
+        "salary": "$140k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Design"
+    },
+    {
+        "title": "AI Developer",
+        "company": "AI Innovators",
+        "description": "Develop machine learning algorithms to optimize business operations.",
+        "location": "San Francisco",
+        "remote": "Remote",
+        "salary": "$150k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Brand Ambassador",
+        "company": "Global Reach",
+        "description": "Promote brand values and engage with customers on social media.",
+        "location": "Los Angeles",
+        "remote": "On-site",
+        "salary": "$60k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Mobile App Developer",
+        "company": "TechMovers",
+        "description": "Build and maintain mobile applications for Android and iOS.",
+        "location": "Seattle",
+        "remote": "Remote",
+        "salary": "$125k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Development"
+    },
+    {
+        "title": "Business Analyst",
+        "company": "TechBrains",
+        "description": "Analyze business data to provide insights and recommendations.",
+        "location": "Chicago",
+        "remote": "Hybrid",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Finance"
+    },
+    {
+        "title": "Full Stack Developer",
+        "company": "CodeWave",
+        "description": "Design and develop both the front-end and back-end of web applications.",
+        "location": "Austin",
+        "remote": "Hybrid",
+        "salary": "$130k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab64fe4ba6e6875abbf4e_logo%201.svg",
+        "category": "Development"
+    },
+    {
+        "title": "Project Manager",
+        "company": "ProSolve",
+        "description": "Manage and oversee projects from inception to completion.",
+        "location": "New York",
+        "remote": "On-site",
+        "salary": "$110k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a8141ecba53d6f7d7d0b5_Logomark%20(10).svg",
+        "category": "Management"
+    },
+    {
+        "title": "Sales Manager",
+        "company": "SellWell",
+        "description": "Lead the sales team and drive company revenue.",
+        "location": "Dallas",
+        "remote": "Remote",
+        "salary": "$105k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab65a9027ec9d82045cf7_logo%203.svg",
+        "category": "Marketing"
+    },
+    {
+        "title": "Systems Analyst",
+        "company": "TechPro",
+        "description": "Analyze and improve IT systems to meet organizational needs.",
+        "location": "Miami",
+        "remote": "Hybrid",
+        "salary": "$95k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649ab655d1c03ee683ac9ede_logo%202.svg",
+        "category": "Engineering"
+    },
+    {
+        "title": "HR Specialist",
+        "company": "PeopleFirst",
+        "description": "Assist in recruiting and managing HR processes.",
+        "location": "San Francisco",
+        "remote": "Hybrid",
+        "salary": "$80k",
+        "logo": "https://cdn.prod.website-files.com/64943f2a36915879aa1daef2/649a812a928791bdbf8274e5_Logomark%20(9).svg",
+        "category": "Management"
+    }
+]
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"/>
+</head>
+<body class="dark-mode">
+   
+    <header>
+        <div class="JobBoard"><img id="logo" src="logo (2).png" alt="" srcset=""></div>
+        <nav>
+            <a href="./index.html" class="animated-link">Home</a>
+            <a href="#Jobs" class="animated-link">Jobs</a>
+            <a href="#Careers" class="animated-link">Careers</a>
+            <a href="#Contact" class="animated-link">Contact</a>
+        </nav>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <div class="cart" onclick="showLikedCards()">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+            <div class="cart-badge" id="cart-badge">0</div>
+        </div>
+        <div class="button-container">
+            <button class="btn1"><span>Job Post</span></button>
+            <button id="btn"><span>CV Post</span></button>
+        </div>
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+      </header>
+
+      <div id="liked-cards-popup">
+        <button id="close-liked-cards" onclick="closeLikedCards()">X</button>
+        <div id="liked-cards-content"></div>
+    </div>
+
+    
+    <section class="job-section1" id="Jobs">
+        <div class="job-section1-container">
+            <h3>Discover the best job</h3><br>
+            <p>Start career with the best company in the world, we ensures </p>
+            <p>you to get the best job possible.</p>
+        </div>
+
+        <section id="search-filter">
+            <input type="text" id="searchBar" placeholder="Search jobs...">
+            <select id="filterCategory">
+                <option value="all">All Categories</option>
+                <option value="Digital">Digital</option>
+                <option value="Design">Design</option>
+                <option value="Development">Development</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Finance">Finance</option>
+                <option value="Management">Management</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+            <select id="filterType">
+                <option value="all">All Types</option>
+                <option value="Remote">Remote</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="On-site">On-site</option>
+            </select>
+            <select id="sortOptions">
+                <option value="salary">Sort by Salary</option>
+                <option value="title">Sort by Title</option>
+            </select>
+        </section>
+
+        <div class="card-back">
+            <div id="unique-job-cards-container"></div>
+        </div>
+
+        <div class="pagination-container">
+            <button id="prev-page" class="pagination-button">Previous</button>
+            <span id="page-indicator">Page 1</span>
+            <button id="next-page" class="pagination-button">Next</button>
+        </div>
+    </section>
+
+    
+    <!-- section9 -->
+    <section class="section9" id="Careers">
+        <div class="section9-container">
+            <div class="section9a">
+                <h6>CAREERS</h6><br>
+                <h3>Join to help businesses grow</h3><br><br><br><br>
+                <button id="search-button"><span>Explore Careers &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span></button>
+            </div>
+            <div class="section9a">
+                <h6>BLOG</h6><br>
+                <h3>Tips, and trends for future job</h3><br><br><br><br>
+                <button id="search-button"><span>Explore Blog &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span></button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- section10 -->
+    <section class="section10" id="Contact">
+        <div class="section10a">
+            <h4>Subscribe</h4><br>
+            <p>Stay current with all thinks JobBoard</p><br>
+            <div class="search-container1">
+                <input type="text" placeholder="Email" id="inp">
+                <button type="submit" id="Subscribe"><span>Subscribe &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></span></button>
+            </div>
+        </div>
+        <div class="section10b">
+            <div class="sec10">
+                <h6>COMPANY</h6>
+                <a href="#">about</a>
+                <a href="#">Our Team</a>
+                <a href="#">Jobs</a>
+            </div>
+            <div class="sec10">
+                <h6>RESOURCES</h6>
+                <a href="#">News</a>
+                <a href="#">FAQs</a>
+                <a href="#">Candidates</a>
+            </div>
+            <div class="sec10">
+                <h6>CONTACTS</h6>
+                <a href="#">CV Post</a>
+                <a href="#">Job Post</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+     </section>
+    
+     <!-- footer -->
+      <footer>
+            <div class="footer-container2">
+                <div class="row">
+                    <div>
+                        <a href="#"><i class="fas fa-copyright text-light me-2"></i><span>JobBoard</span></a>, All right reserved.
+                    </div>
+                    <div class="footerlink">
+                     Designed By <a class="border-bottom" href="https://htmlcodex.com"> <span> Jaideep Sai </span></a>
+                    </div>
+                </div>
+            </div>
+      </footer>
+    <!-- Custom Modal for Subscription Message -->
+<div id="subscription-message-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h4>Thank You!</h4>
+        <p>You have successfully subscribed to JobBoard. Stay tuned for updates!</p>
+    </div>
+</div>
+      <!-- Chatbot Header -->
+
+    <button id="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-rounded">close</span>
+    </button>
+      <div class="chatbot-popup">
+        <div class="chat-header">
+            <div class="header-info">
+                <svg class="chatbot-logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+                    <path d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"></path>
+                </svg>    
+                <h2 class="logo-text">Chatbot</h2>
+            </div>
+            <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+        </div>
+        <!-- Chatbot Body -->
+        <div class="chat-body">
+            <div class="message bot-message">
+                <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+                    <path d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"></path>
+                </svg>    
+                <div class="message-text">
+                    Hey there 👋 <br/> How can I help you today?</div>
+            </div>
+        </div>
+        <!-- Chatbot Footer -->
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+            <textarea placeholder="Message..." 
+            class="message-input" required></textarea>
+            <div class="chat-controls">
+            <button type="button" id="emoji-picker"
+             class="material-symbols-outlined">sentiment_satisfied</button>
+            <div class="file-upload-wrapper">
+                <input type="file" accept="images/*" id="file-input" hidden>
+                <img src="#">
+                <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+                <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
+            </div>
+            <button type="submit" id="send-message"
+            class="material-symbols-rounded">arrow_upward</button>
+            </div>
+        </form>
+        </div>
+      </div>
+
+      
+<!-- linking emoji mart script for emoji picker -->
+<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+<script src="script.js"></script>
+<script>
+document.addEventListener("click", (event) => {
+    console.log("Clicked element:", event.target); // Debugging: Log clicked element
+
+    const button = event.target.closest("#unique-search-button"); // Get the nearest button
+    if (button) {
+        console.log("Dynamically loaded Apply button clicked! Redirecting...");
+        window.location.href = "./JobApplicationForm.html";
+    }
+});
+let c = document.getElementsByClassName("btn1");
+c[0].addEventListener("click",()=>{
+    window.location.href="./jobs.html"
+})
+let b = document.getElementById("btn");
+b.addEventListener("click",()=>{
+    window.location.href="./JobApplicationForm.html"
+})
+</script>
+</body>
+</html>

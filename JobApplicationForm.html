@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      font-size: 1.4em;
+      margin-bottom: 15px;
+      color: #007BFF;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 8px;
+      font-weight: 600;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #444;
+    }
+
+    label.required::after {
+      content: '*';
+      color: red;
+      margin-left: 5px;
+    }
+
+    label.optional::after {
+      content: '(Optional)';
+      color: gray;
+      margin-left: 5px;
+      font-size: 0.9em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: calc(100% - 20px); /* Ensure padding doesn't overflow */
+      padding: 12px 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #007BFF;
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9em;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar {
+      height: 12px;
+      background: #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 25px;
+    }
+
+    .progress {
+      height: 100%;
+      width: 0%;
+      background: #007BFF;
+      transition: width 0.3s ease;
+    }
+    .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+.close-modal {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application Form</h1>
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <form id="jobApplicationForm">
+      <!-- Personal Information -->
+      <div class="section">
+        <div class="section-title">Personal Information</div>
+        <label for="fullName" class="required">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+        <label for="email" class="required">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone" class="required">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="dob" class="required">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <!-- Address Information -->
+      <div class="section">
+        <div class="section-title">Address Information</div>
+        <label for="address" class="required">Street Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter your street address" required>
+
+        <label for="city" class="required">City</label>
+        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+
+        <label for="state" class="required">State</label>
+        <input type="text" id="state" name="state" placeholder="Enter your state" required>
+
+        <label for="zip" class="required">ZIP Code</label>
+        <input type="text" id="zip" name="zip" placeholder="Enter your ZIP code" required>
+      </div>
+
+      <!-- Education Background -->
+      <div class="section">
+        <div class="section-title">Education Background</div>
+        <label for="educationLevel" class="required">Highest Education Level</label>
+        <select id="educationLevel" name="educationLevel" required>
+          <option value="">Select an option</option>
+          <option value="high-school">High School</option>
+          <option value="bachelor">Bachelor's Degree</option>
+          <option value="master">Master's Degree</option>
+          <option value="phd">PhD</option>
+        </select>
+
+        <label for="university" class="required">University/College Name</label>
+        <input type="text" id="university" name="university" placeholder="Enter your university name" required>
+
+        <label for="graduationYear" class="required">Graduation Year</label>
+        <input type="number" id="graduationYear" name="graduationYear" placeholder="YYYY" required>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="section">
+        <div class="section-title">Work Experience</div>
+        <label for="experience" class="optional">Years of Experience</label>
+        <select id="experience" name="experience">
+          <option value="">Select an option</option>
+          <option value="0-1">0-1 years</option>
+          <option value="1-3">1-3 years</option>
+          <option value="3-5">3-5 years</option>
+          <option value="5+">5+ years</option>
+        </select>
+
+        <label for="previousCompany" class="optional">Previous Company</label>
+        <input type="text" id="previousCompany" name="previousCompany" placeholder="Enter your previous company name">
+
+        <label for="role" class="optional">Previous Role</label>
+        <input type="text" id="role" name="role" placeholder="Enter your previous role">
+      </div>
+
+      <!-- Additional Information -->
+      <div class="section">
+        <div class="section-title">Additional Information</div>
+        <label for="coverLetter" class="optional">Cover Letter</label>
+        <textarea id="coverLetter" name="coverLetter" placeholder="Write your cover letter here..."></textarea>
+
+        <label for="resume" class="required">Upload Resume</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+  <div id="success-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h4>Success!</h4>
+      <p>Your application has been submitted successfully.</p>
+    </div>
+  </div>
+  <script>
+    // Progress Bar Logic
+    const form = document.getElementById('jobApplicationForm');
+    const progress = document.getElementById('progress');
+
+    form.addEventListener('input', () => {
+      const totalFields = Array.from(form.elements).filter(el => el.required).length;
+      const filledFields = Array.from(form.elements).filter(el => el.required && el.value.trim() !== '').length;
+      const progressPercentage = (filledFields / totalFields) * 100;
+      progress.style.width = `${progressPercentage}%`;
+    });
+
+const successModal = document.getElementById('success-modal');
+const closeModalButton = document.querySelector('.close-modal');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  successModal.style.display = 'block'; // Show success modal
+
+  setTimeout(() => {
+    window.location.href = './jobs.html';
+  }, 2000); // Redirect after 2 seconds
+});
+
+closeModalButton.addEventListener('click', () => {
+  successModal.style.display = 'none';
+});
+  </script>
+ 
+</body>
+</html>
