@@ -87,7 +87,7 @@ signIn.addEventListener('click',(event)=>{
         showMessage('login is successful','signInMessage');
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId',user.uid);
-        window.location.href="../JobHelperProject/index.html";
+        window.location.href="./JobHelperProject/index.html";
     })
     .catch((error)=>{
         const errorCode = error.code;
@@ -106,7 +106,7 @@ guestLogin.addEventListener("click", () => {
     signInAnonymously(auth)
         .then(() => {
             showMessage("Logged in as Guest", "signInMessage");
-            window.location.href = "../JobHelperProject/index.html"; 
+            window.location.href = "./JobHelperProject/index.html"; 
         })
         .catch((error) => {
             showMessage("Unable to login as Guest", "signInMessage");
