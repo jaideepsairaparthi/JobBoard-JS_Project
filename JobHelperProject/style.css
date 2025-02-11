@@ -1909,6 +1909,7 @@ em-emoji-picker{
         text-overflow: ellipsis; /* Add an ellipsis if text overflows */
         max-width: 100px; /* Set a max width to prevent text overflow */
     }
+    
 
     .s-btn span {
         font-size: 12px; 
@@ -1918,7 +1919,6 @@ em-emoji-picker{
         font-size: 10px;
     }
 }
-
 
 @media (max-width: 576px) {
     /* Section2 Container */
