@@ -1868,7 +1868,7 @@ em-emoji-picker{
         font-size: 1em;
         margin-top: 1em;
         margin-bottom: 2em;
-        text-align: end;
+        text-align: center;
     }
 
     .container {
@@ -1884,26 +1884,41 @@ em-emoji-picker{
     }
 
     .search-container {
-        width: 80%;
+        width: 90%;
         padding: 8px 16px;
         justify-content: center;
         margin: 1em auto;
     }
+    .search-container i{
+        font-size: 12px;
+    }
 
     input[type="text"] {
-        font-size: 14px;
-        padding: 8px;
+        font-size: 13px;
+        padding: 10px;
     }
 
-    .search-container button {
-        padding: 8px 16px;
-        font-size: 1em;
+}
+
+@media screen and (max-width: 576px) {
+    .s-btn {
+        font-size: 14px; /* Adjust text size */
+        padding: 8px 12px; /* Adjust padding to fit text properly */
+        white-space: nowrap; /* Prevent text wrapping */
+        overflow: hidden; /* Hide overflow text */
+        text-overflow: ellipsis; /* Add an ellipsis if text overflows */
+        max-width: 100px; /* Set a max width to prevent text overflow */
     }
 
-    .search-icon {
-        font-size: 1.2em;
+    .s-btn span {
+        font-size: 12px; 
+    }
+
+    .s-btn i {
+        font-size: 10px;
     }
 }
+
 
 @media (max-width: 576px) {
     /* Section2 Container */
